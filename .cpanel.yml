@@ -2,4 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/public_html/timeflow
+    - /bin/rm -rf $DEPLOYPATH/static
     - /bin/cp -rf $CURRENT_SOURCE_DIR/build/. $DEPLOYPATH
